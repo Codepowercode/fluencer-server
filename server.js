@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-
+const port = process.env.PORT || 3000;
 const app = express();
 
 try {
@@ -73,6 +73,6 @@ app.put('/api/shops/:shopName', async (req, res) => {
 })
 
 // Start the Express application
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server started on port 3000');
 });
