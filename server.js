@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 try {
-  await mongoose.connect('mongodb://localhost/fluencer-db');
+  await mongoose.connect('mongodb+srv://dev_khcho:elfc3oi5g7otqvh5@cluster0.u93kv.mongodb.net/luencer-db'');
   console.log('Connected to MongoDB');
 } catch(error) {
   console.error('Error connecting to MongoDB:', error);
